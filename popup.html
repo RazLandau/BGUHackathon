@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+}
+</style>
+</head>
+<body>
+
+<form>
+  <input id="input" list="pasta" autocomplete="off" type="text" name="search" placeholder="What's troubling you?">
+  	<datalist id="pasta">
+	<option>What is the meaning of life?</option>
+	<option>How cool is this?</option>
+	<option>To be or not to be?</option>
+	<option>Other funny questions..</option>
+	</datalist>
+</form>
+
+<script src="temp.js"></script>
+
+</body>
+</html>
+
+
